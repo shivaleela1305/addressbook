@@ -15,7 +15,10 @@ public class addressbook {
 		Add_contact add = new Add_contact();
 		add.add_Contact();
 		add.display_Data();
-		add.edit_Contact();
+		Edit_contact edit = new Edit_contact();
+		edit.edit_Contacts();
+		edit.display_EditedData();
+		
 	}
 	
 

@@ -12,7 +12,6 @@ public class Add_contact {
 		for(Contact_details contacts : list) {
 			System.out.println(contacts);
 		}
-	//display the modified contacts of address book
 	
 		
 	}
@@ -42,29 +41,6 @@ public class Add_contact {
 			contact.setEmail_id(scan.next());
 			list.add(contact);
 	      }
-	}
-	
-	void edit_Contact() {
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter details for editing an existing contact:");
-			System.out.println("modify First Name: ");
-            contact.setFirst_name1(scan.next());
-            System.out.println("modify Last Name: ");
-            contact.setLast_name1(scan.next());
-            System.out.println("modify address: ");
-            contact.setAddress1(scan.next());
-            System.out.println("modify city: ");
-            contact.setCity1(scan.next());
-            System.out.println("modify state: ");
-            contact.setState1(scan.next());
-            System.out.println("modify zip code: ");
-            contact.setZip1(scan.next());
-            System.out.println("modify phone number: ");
-            contact.setPhone_no1(scan.next());
-            System.out.println("modify email_id: ");
-            contact.setEmail_id1(scan.next());
-            list.add(contact);
-        
 	}
 
 }
