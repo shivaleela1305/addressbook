@@ -1,10 +1,6 @@
 package bdlabzz3;
-import java.util.Scanner;
 import java.util.ArrayList;
-
-
-
-	
+import java.util.Scanner;
 
 public class addressbook {
 
@@ -15,11 +11,8 @@ public class addressbook {
 		Add_contact add = new Add_contact();
 		add.add_Contact();
 		add.display_Data();
-		Edit_contact edit = new Edit_contact();
-		edit.edit_Contacts();
-		edit.display_EditedData();
+		add.edit_Contact();
+		add.display_Data();
 		
 	}
-	
-
 }
