@@ -19,10 +19,6 @@ public class Add_contact {
 	void add_Contact(){
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.println("enter the number of records that need to be added in address book:" );
-		int n=scan.nextInt();
-		
-		for(int i=0; i<=n; i++) {
 			System.out.println("enter the first name:");
 			contact.setFirst_name(scan.next());
 			System.out.println("enter the last name:");
@@ -40,9 +36,9 @@ public class Add_contact {
 			System.out.println("enter the email_id:");
 			contact.setEmail_id(scan.next());
 			list.add(contact);
-	      }
 	}
 	
+	//editing the contact
 	void edit_Contact() {
 		boolean isPerson_found=false;
 		int indexofPerson=0;
@@ -73,8 +69,27 @@ public class Add_contact {
             list.get(indexofPerson).setPhone_no(scan.next());
             System.out.println("modify email_id: ");
             list.get(indexofPerson).setEmail_id(scan.next());
-            list.add(contact);
 		}
+	}
+	//deleting the contact
+	void delete_Contact() {
+		boolean isPerson_found=false;
+		int indexofPerson=0;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter name for deleting an existing contact:");
+		String first_name1 = scan.next();
+		for(int i=0; i<list.size(); i++) {
+			if(list.get(i).getFirst_name().equals(first_name1)) {
+				isPerson_found=true;
+				indexofPerson=i;
+				break;
+			}
+		}
+		
+		if(isPerson_found ) {
+			list.removeIf(list->list.getFirst_name().equals(first_name1));
+		}
+		
 	}
 
 }
