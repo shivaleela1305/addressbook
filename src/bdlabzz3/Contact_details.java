@@ -1,6 +1,7 @@
 package bdlabzz3;
 
-//initializing for adding the contact to address book
+
+//uc1: initializing for adding the contact to address book
 public class Contact_details {
 	private String first_name;
 	private String last_name;
